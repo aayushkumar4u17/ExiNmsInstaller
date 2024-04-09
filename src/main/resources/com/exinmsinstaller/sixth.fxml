@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exinmsinstaller.FifthController">
+   <children>
+      <Line endX="599.9999389648438" endY="74.20001220703125" startX="1.220703143189894E-5" startY="74.20001220703125" />
+      <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Installing" wrappingWidth="107.82421875">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/main_logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="22.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Installing ExiNMS-Root-leaf-3.0.2" wrappingWidth="200.0" />
+      <Text layoutX="22.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please wait while Setup installs ExiNMS-Root-Leaf-3.0.2 on your computer." wrappingWidth="415.2034912109375" />
+      <Text layoutX="22.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Installing ExiNMS" wrappingWidth="147.72265625" />
+      <Line endX="599.9999389648438" endY="319.5" startX="76.30000305175781" startY="319.5" />
+      <Text fill="#00000093" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="InstallJammer" wrappingWidth="101.36834716796875" />
+      <HBox alignment="BOTTOM_RIGHT" layoutX="315.0" layoutY="329.0" prefHeight="71.0" prefWidth="277.0" spacing="10.0">
+         <children>
+            <Button disable="true" mnemonicParsing="false" prefHeight="26.0" prefWidth="65.0" text="&lt; Back" />
+            <Button disable="true" mnemonicParsing="false" prefHeight="26.0" prefWidth="65.0" text="Next &gt;" />
+            <Button mnemonicParsing="false" onAction="#cnlBtn6" prefHeight="26.0" prefWidth="65.0" text="Cancel" />
+         </children>
+         <padding>
+            <Insets bottom="25.0" right="10.0" />
+         </padding>
+      </HBox>
+      <ProgressBar layoutX="21.0" layoutY="152.0" prefHeight="26.0" prefWidth="558.0" />
+   </children>
+</AnchorPane>

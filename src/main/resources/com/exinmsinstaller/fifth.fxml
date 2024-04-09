@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exinmsinstaller.FifthController">
+   <children>
+      <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Copying Files" wrappingWidth="138.484375">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Review settings before copying files" wrappingWidth="213.2578125" />
+      <Text layoutX="22.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Setup has enough information to start copying the program files. If you want to review or change any setting, click back. If you are satisfied with the settings, click Next to begin copying files." wrappingWidth="540.8454551696777" />
+      <Text fill="#00000091" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="InstallJammer" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Line endX="599.9999389648438" endY="71.85076904296875" startX="1.220703143189894E-5" startY="71.85076904296875" />
+      <Line endX="599.9999389648438" endY="322.20001220703125" startX="72.56837463378906" startY="321.5000305175781" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="400.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/main_logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="copyFldArea" alignment="TOP_LEFT" editable="false" layoutX="22.0" layoutY="133.0" prefHeight="156.0" prefWidth="541.0" text="Install Directory:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <ScrollBar layoutX="572.0" layoutY="133.0" orientation="VERTICAL" prefHeight="156.0" prefWidth="14.0" />
+      <HBox alignment="BOTTOM_RIGHT" layoutX="330.0" layoutY="330.0" prefHeight="70.0" prefWidth="256.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#bckBtn5" prefHeight="26.0" prefWidth="65.0" text="&lt; Back" />
+            <Button mnemonicParsing="false" onAction="#nxtBtn5" prefHeight="26.0" prefWidth="65.0" text="Next &gt;" />
+            <Button mnemonicParsing="false" onAction="#cnlBtn" prefHeight="26.0" prefWidth="65.0" text="Cancel" />
+         </children>
+         <padding>
+            <Insets bottom="25.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

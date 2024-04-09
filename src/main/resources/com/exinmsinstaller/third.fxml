@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exinmsinstaller.ThirdController">
+   <children>
+      <ImageView fitHeight="85.0" fitWidth="188.0" layoutX="398.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/main_logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="22.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="License Path" wrappingWidth="79.90185546875">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <HBox alignment="BOTTOM_RIGHT" layoutX="297.0" layoutY="320.0" prefHeight="73.0" prefWidth="303.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#bckBtn3" prefHeight="26.0" prefWidth="65.0" text="&lt; Back" />
+            <Button fx:id="nextBtn3" disable="true" mnemonicParsing="false" onAction="#nxtBtn3" prefHeight="26.0" prefWidth="65.0" text="Next &gt;" />
+            <Button mnemonicParsing="false" onAction="#cnlBtn" prefHeight="26.0" prefWidth="65.0" text="Cancel" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" right="20.0" />
+         </padding>
+      </HBox>
+      <Button layoutX="527.0" layoutY="150.0" mnemonicParsing="false" onAction="#brswBtn1" prefHeight="26.0" prefWidth="66.0" text="Browse" />
+      <Text fill="#00000094" layoutX="1.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="InstallJammer" wrappingWidth="120.568359375" />
+      <Line endX="315.20001220703125" endY="1.0" layoutX="285.0" layoutY="320.0" startX="-208.0" startY="1.0" />
+      <Text layoutX="203.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--- ExiNMS LoadTheFile ExiNMS ---" />
+      <TextField fx:id="filePathField" editable="false" layoutX="100.0" layoutY="150.0" prefHeight="26.0" prefWidth="419.0" />
+   </children>
+</AnchorPane>
